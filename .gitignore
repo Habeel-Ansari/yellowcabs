@@ -1,0 +1,5 @@
+# Raw source photos/video (280MB+) — optimized copies already live in website/images/
+Assets/
+
+# Local tooling cache
+.impeccable/
