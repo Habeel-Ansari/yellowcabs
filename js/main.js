@@ -49,7 +49,7 @@ function initGallery(grid) {
       fig.setAttribute('role', 'button');
       fig.setAttribute('aria-label', `Open photo ${i + 1} of ${items.length}, enlarged`);
       fig.innerHTML = `
-        <img src="images/gallery/thumb/${item.slug}.webp" alt="Yellow Cabs Whitecourt taxi, photo ${i + 1} of ${items.length}" loading="lazy" width="${item.w}" height="${item.h}">
+        <img src="images/gallery/thumb/${item.slug}.webp" alt="${(item.alt || 'Yellow Cabs Whitecourt taxi').replace(/"/g, '&quot;')}" loading="lazy" width="${item.w}" height="${item.h}">
         <span class="zoom-badge" aria-hidden="true" focusable="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/><path d="M11 8v6M8 11h6" stroke-linecap="round"/></svg></span>
       `;
       frag.appendChild(fig);
@@ -92,7 +92,7 @@ function setupLightbox(grid, items) {
     current = (i + items.length) % items.length;
     const item = items[current];
     img.src = `images/gallery/full/${item.slug}.webp`;
-    img.alt = `Yellow Cabs Whitecourt taxi, photo ${current + 1} of ${items.length}`;
+    img.alt = item.alt || 'Yellow Cabs Whitecourt taxi';
     counter.textContent = `${current + 1} / ${items.length}`;
   };
 

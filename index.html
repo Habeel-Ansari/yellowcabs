@@ -3,8 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yellow Cabs Whitecourt | Local Taxi Service</title>
+<!-- Google tag (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYVP5B3NM8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EYVP5B3NM8');
+  // Track taps on phone and email links
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (!a) return;
+    gtag('event', a.getAttribute('href').indexOf('tel:') === 0 ? 'phone_click' : 'email_click',
+         { link_url: a.getAttribute('href') });
+  });
+</script>
+<title>Taxi in Whitecourt, AB | Yellow Cabs Whitecourt</title>
 <meta name="description" content="Yellow Cabs Whitecourt — your trusted local taxi service. Reliable rides, courteous drivers, and a modern fleet serving Whitecourt, Alberta. Call 780-527-5050.">
+<link rel="canonical" href="https://yellowcabswhitecourt.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yellow Cabs Whitecourt">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Taxi in Whitecourt, AB | Yellow Cabs Whitecourt">
+<meta property="og:description" content="Yellow Cabs Whitecourt — your trusted local taxi service. Reliable rides, courteous drivers, and a modern fleet serving Whitecourt, Alberta. Call 780-527-5050.">
+<meta property="og:url" content="https://yellowcabswhitecourt.com/">
+<meta property="og:image" content="https://yellowcabswhitecourt.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yellow Cabs Whitecourt taxis parked in Whitecourt, Alberta">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taxi in Whitecourt, AB | Yellow Cabs Whitecourt">
+<meta name="twitter:description" content="Yellow Cabs Whitecourt — your trusted local taxi service. Reliable rides, courteous drivers, and a modern fleet serving Whitecourt, Alberta. Call 780-527-5050.">
+<meta name="twitter:image" content="https://yellowcabswhitecourt.com/images/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "TaxiService",
+    "LocalBusiness"
+  ],
+  "@id": "https://yellowcabswhitecourt.com/#business",
+  "name": "Yellow Cabs Whitecourt",
+  "url": "https://yellowcabswhitecourt.com/",
+  "telephone": "+1-780-527-5050",
+  "image": "https://yellowcabswhitecourt.com/images/og-image.jpg",
+  "logo": "https://yellowcabswhitecourt.com/images/logo.webp",
+  "description": "Local taxi service in Whitecourt, Alberta offering local rides, out-of-town and airport trips, courier and parcel delivery, scheduled rides, senior and accessible rides, and business accounts.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit #7, 4723 50 Ave",
+    "addressLocality": "Whitecourt",
+    "addressRegion": "AB",
+    "postalCode": "T7S 1N8",
+    "addressCountry": "CA"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Whitecourt",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "Alberta"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local Rides"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Out-of-Town & Airport Trips"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Courier & Parcel Delivery"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Scheduled & Pre-Booked Rides"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Seniors & Accessible Rides"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Accounts"
+        }
+      }
+    ]
+  }
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +125,13 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="brand">
+    <a href="/" class="brand">
       <img src="images/logo.webp" alt="Yellow Cabs Whitecourt" class="brand-logo" width="68" height="60">
     </a>
 
     <nav class="main-nav" id="mainNav">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="/" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -43,10 +153,10 @@
 <main id="main-content">
 <section class="hero">
   <div class="hero-media">
-    <img src="images/hero/home-hero.webp" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
+    <img src="images/hero/home-hero.webp" fetchpriority="high" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
   </div>
   <div class="container hero-content">
-    <h1>Your Journey, <em>Our Priority.</em></h1>
+    <h1>Taxi in Whitecourt. <em>Your Journey, Our Priority.</em></h1>
     <p class="lead">Whitecourt's local taxi service — reliable rides, friendly drivers, and a modern fleet ready to take you where you need to go.</p>
     <div class="hero-actions">
       <a href="tel:7805275050" class="btn btn-primary">
@@ -222,7 +332,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="brand">
+        <a href="/" class="brand">
           <span class="brand-logo-plate"><img src="images/logo.webp" alt="Yellow Cabs Whitecourt" class="brand-logo" width="68" height="60"></span>
         </a>
         <p>Whitecourt's local taxi service. Reliable rides and friendly drivers, day and night.</p>
@@ -230,7 +340,7 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -239,10 +349,10 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="index.html#services">Local Rides</a></li>
-          <li><a href="index.html#services">Out-of-Town Trips</a></li>
-          <li><a href="index.html#services">Courier &amp; Delivery</a></li>
-          <li><a href="index.html#services">Business Accounts</a></li>
+          <li><a href="/#services">Local Rides</a></li>
+          <li><a href="/#services">Out-of-Town Trips</a></li>
+          <li><a href="/#services">Courier &amp; Delivery</a></li>
+          <li><a href="/#services">Business Accounts</a></li>
         </ul>
       </div>
       <div class="footer-col">

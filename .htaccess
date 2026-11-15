@@ -1,0 +1,14 @@
+# Yellow Cabs Whitecourt - canonical redirects
+RewriteEngine On
+
+# 1) /index.html -> /
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://yellowcabswhitecourt.com/ [R=301,L]
+
+# 2) www -> non-www (and https)
+RewriteCond %{HTTP_HOST} ^www\.yellowcabswhitecourt\.com$ [NC]
+RewriteRule ^(.*)$ https://yellowcabswhitecourt.com/$1 [R=301,L]
+
+# 3) http -> https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://yellowcabswhitecourt.com/$1 [R=301,L]
