@@ -46,6 +46,7 @@
   "name": "Yellow Cabs Whitecourt",
   "url": "https://yellowcabswhitecourt.com/",
   "telephone": "+1-780-527-5050",
+  "paymentAccepted": "Cash, Card",
   "image": "https://yellowcabswhitecourt.com/images/og-image.jpg",
   "logo": "https://yellowcabswhitecourt.com/images/logo.webp",
   "description": "Local taxi service in Whitecourt, Alberta offering local rides, out-of-town and airport trips, courier and parcel delivery, scheduled rides, senior and accessible rides, and business accounts.",
@@ -115,11 +116,84 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I book a taxi in Whitecourt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call 780-527-5050. One phone call is all it takes — our local dispatch will send a Yellow Cabs Whitecourt driver to you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pre-book a ride for an early flight or appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We offer scheduled and pre-booked rides for early flights, appointments and events. Call ahead and we'll be there on time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do airport and out-of-town trips?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We handle longer-distance, out-of-town and airport trips from Whitecourt with advance booking. Call 780-527-5050 to arrange your trip."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer courier or parcel delivery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We move small packages and parcels quickly across Whitecourt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept card payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We accept both cash and card."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you help seniors and passengers who need assistance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our drivers offer patient, courteous service for seniors and passengers who need extra help getting around."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer business accounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide reliable transportation for local businesses — ask us about setting up a standing account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Yellow Cabs Whitecourt located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our office is at Unit #7, 4723 50 Ave, Whitecourt, AB T7S 1N8. Call 780-527-5050 for a ride."
+      }
+    }
+  ]
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="images/hero/home-hero.webp" imagesrcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" imagesizes="100vw" fetchpriority="high">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -310,6 +384,49 @@
   </div>
 </section>
 
+<section class="section section--soft" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers about booking a taxi, airport trips and deliveries in Whitecourt.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How do I book a taxi in Whitecourt?</summary>
+        <p>Call 780-527-5050. One phone call is all it takes &mdash; our local dispatch will send a Yellow Cabs Whitecourt driver to you.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I pre-book a ride for an early flight or appointment?</summary>
+        <p>Yes. We offer scheduled and pre-booked rides for early flights, appointments and events. Call ahead and we'll be there on time.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you do airport and out-of-town trips?</summary>
+        <p>Yes. We handle longer-distance, out-of-town and airport trips from Whitecourt with advance booking. Call 780-527-5050 to arrange your trip.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer courier or parcel delivery?</summary>
+        <p>Yes. We move small packages and parcels quickly across Whitecourt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you accept card payments?</summary>
+        <p>Yes. We accept both cash and card.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you help seniors and passengers who need assistance?</summary>
+        <p>Yes. Our drivers offer patient, courteous service for seniors and passengers who need extra help getting around.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer business accounts?</summary>
+        <p>Yes. We provide reliable transportation for local businesses &mdash; ask us about setting up a standing account.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Where is Yellow Cabs Whitecourt located?</summary>
+        <p>Our office is at Unit #7, 4723 50 Ave, Whitecourt, AB T7S 1N8. Call 780-527-5050 for a ride.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="cta-banner">
@@ -340,16 +457,17 @@
         <p>Whitecourt's local taxi service. Reliable rides and friendly drivers, day and night.</p>
       </div>
       <div class="footer-col">
-        <h4>Explore</h4>
+        <h2 class="footer-title">Explore</h2>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="/#faq">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h2 class="footer-title">Services</h2>
         <ul>
           <li><a href="/#services">Local Rides</a></li>
           <li><a href="/#services">Out-of-Town Trips</a></li>
@@ -358,7 +476,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Get in Touch</h4>
+        <h2 class="footer-title">Get in Touch</h2>
         <ul>
           <li class="contact-line">
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
