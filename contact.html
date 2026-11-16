@@ -38,6 +38,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -73,7 +74,7 @@
 <main id="main-content">
 <section class="page-hero">
   <div class="hero-media">
-    <img src="images/hero/contact-hero.webp" alt="Yellow Cabs Whitecourt taxi with door open, ready for a passenger">
+    <img src="images/hero/contact-hero.webp" srcset="images/hero/contact-hero-800.webp 800w, images/hero/contact-hero.webp 1600w" sizes="100vw" alt="Yellow Cabs Whitecourt taxi with door open, ready for a passenger">
   </div>
   <div class="container hero-content">
     <div class="breadcrumb">Home <span>/</span> Contact</div>
@@ -188,6 +189,6 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

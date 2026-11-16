@@ -118,6 +118,8 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/hero/home-hero.webp" imagesrcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -153,7 +155,7 @@
 <main id="main-content">
 <section class="hero">
   <div class="hero-media">
-    <img src="images/hero/home-hero.webp" fetchpriority="high" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
+    <img src="images/hero/home-hero.webp" srcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" sizes="100vw" fetchpriority="high" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
   </div>
   <div class="container hero-content">
     <h1>Taxi in Whitecourt. <em>Your Journey, Our Priority.</em></h1>
@@ -229,7 +231,7 @@
   <div class="container">
     <div class="split">
       <div class="split-media">
-        <img src="images/hero/home-fleet.webp" alt="Yellow Cabs Whitecourt fleet of taxis parked outside a local restaurant" loading="lazy">
+        <img src="images/hero/home-fleet.webp" srcset="images/hero/home-fleet-800.webp 800w, images/hero/home-fleet.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Yellow Cabs Whitecourt fleet of taxis parked outside a local restaurant" loading="lazy">
         <div class="float-card">
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M6 17V9l6-4 6 4v8M9 17v-4h6v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div><b>Modern Fleet</b><span>Sedans &amp; minivans</span></div>
@@ -377,6 +379,6 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

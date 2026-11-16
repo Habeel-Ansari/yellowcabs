@@ -38,6 +38,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -73,7 +74,7 @@
 <main id="main-content">
 <section class="page-hero">
   <div class="hero-media">
-    <img src="images/hero/about-hero.webp" alt="Yellow Cabs Whitecourt taxis outside a local Whitecourt business">
+    <img src="images/hero/about-hero.webp" srcset="images/hero/about-hero-800.webp 800w, images/hero/about-hero.webp 1600w" sizes="100vw" alt="Yellow Cabs Whitecourt taxis outside a local Whitecourt business">
   </div>
   <div class="container hero-content">
     <div class="breadcrumb">Home <span>/</span> About</div>
@@ -86,7 +87,7 @@
   <div class="container">
     <div class="split">
       <div class="split-media">
-        <img src="images/hero/about-story.webp" alt="Yellow Cabs Whitecourt taxi outside the Town of Whitecourt Administration Building" loading="lazy">
+        <img src="images/hero/about-story.webp" srcset="images/hero/about-story-800.webp 800w, images/hero/about-story.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Yellow Cabs Whitecourt taxi outside the Town of Whitecourt Administration Building" loading="lazy">
         <div class="float-card">
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <div><b>Whitecourt, AB</b><span>Proudly local</span></div>
@@ -229,6 +230,6 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
