@@ -3,3 +3,6 @@ Assets/
 
 # Local tooling cache
 .impeccable/
+
+# Private client paperwork (company papers, CRA profile, agreements) - never commit or publish
+*.pdf
