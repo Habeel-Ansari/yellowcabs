@@ -631,3 +631,13 @@ button { font-family: inherit; }
 
 /* Footer column titles (h2 for correct heading order, styled as before) */
 .footer-col .footer-title { color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 20px; }
+
+/* Round 4 */
+.card-link { display: inline-block; margin-top: 14px; font-weight: 600; font-size: 14.5px; color: var(--color-ink); border-bottom: 2px solid var(--color-accent); }
+.card-link:hover { color: var(--color-accent-dark); }
+.service-card--link { display: block; color: inherit; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+@media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } }
+.step-num { font-family: var(--font-head); font-weight: 700; font-size: 20px; }
+.breadcrumb a { color: inherit; }
+.page-hero picture, .hero picture { display: contents; }

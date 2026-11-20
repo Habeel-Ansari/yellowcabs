@@ -4,12 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYVP5B3NM8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-EYVP5B3NM8');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-EYVP5B3NM8';
+    document.head.appendChild(s);
+  });
   // Track taps on phone and email links
   document.addEventListener('click', function (e) {
     var a = e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
@@ -191,7 +195,6 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="images/hero/home-hero.webp" imagesrcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" imagesizes="100vw" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/style.css">
@@ -229,7 +232,10 @@
 <main id="main-content">
 <section class="hero">
   <div class="hero-media">
-    <img src="images/hero/home-hero.webp" srcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" sizes="100vw" fetchpriority="high" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/hero/home-hero-mobile.webp">
+      <img src="images/hero/home-hero.webp" srcset="images/hero/home-hero-800.webp 800w, images/hero/home-hero.webp 1600w" sizes="100vw" fetchpriority="high" alt="Yellow Cabs Whitecourt taxi parked in Whitecourt, Alberta">
+    </picture>
   </div>
   <div class="container hero-content">
     <h1>Taxi in Whitecourt. <em>Your Journey, Our Priority.</em></h1>
@@ -276,11 +282,13 @@
         <div class="service-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22l1.6-5L15 5.6a2 2 0 0 1 2.8 0l.6.6a2 2 0 0 1 0 2.8L7 20l-5 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Out-of-Town &amp; Airport Trips</h3>
         <p>Heading beyond Whitecourt? We handle longer-distance and out-of-town trips with advance booking.</p>
+        <a class="card-link" href="airport-taxi.html">Airport &amp; out-of-town trips &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Courier &amp; Parcel Delivery</h3>
         <p>Need something delivered across town in a hurry? We move small packages and parcels quickly.</p>
+        <a class="card-link" href="courier-delivery.html">Courier &amp; delivery &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round"/></svg></div>
@@ -291,6 +299,7 @@
         <div class="service-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round"/></svg></div>
         <h3>Seniors &amp; Accessible Rides</h3>
         <p>Patient, courteous service for seniors and passengers who need extra assistance getting around.</p>
+        <a class="card-link" href="seniors-rides.html">Seniors' rides &rarr;</a>
       </div>
       <div class="service-card">
         <div class="service-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -470,8 +479,9 @@
         <h2 class="footer-title">Services</h2>
         <ul>
           <li><a href="/#services">Local Rides</a></li>
-          <li><a href="/#services">Out-of-Town Trips</a></li>
-          <li><a href="/#services">Courier &amp; Delivery</a></li>
+          <li><a href="airport-taxi.html">Airport &amp; Out-of-Town</a></li>
+          <li><a href="courier-delivery.html">Courier &amp; Delivery</a></li>
+          <li><a href="seniors-rides.html">Seniors' Rides</a></li>
           <li><a href="/#services">Business Accounts</a></li>
         </ul>
       </div>

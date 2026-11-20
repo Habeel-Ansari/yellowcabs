@@ -4,12 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYVP5B3NM8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-EYVP5B3NM8');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-EYVP5B3NM8';
+    document.head.appendChild(s);
+  });
   // Track taps on phone and email links
   document.addEventListener('click', function (e) {
     var a = e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
@@ -163,8 +167,9 @@
         <h2 class="footer-title">Services</h2>
         <ul>
           <li><a href="/#services">Local Rides</a></li>
-          <li><a href="/#services">Out-of-Town Trips</a></li>
-          <li><a href="/#services">Courier &amp; Delivery</a></li>
+          <li><a href="airport-taxi.html">Airport &amp; Out-of-Town</a></li>
+          <li><a href="courier-delivery.html">Courier &amp; Delivery</a></li>
+          <li><a href="seniors-rides.html">Seniors' Rides</a></li>
           <li><a href="/#services">Business Accounts</a></li>
         </ul>
       </div>

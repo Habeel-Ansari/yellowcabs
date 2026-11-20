@@ -35,3 +35,15 @@ RewriteRule ^(.*)$ https://yellowcabswhitecourt.com/$1 [R=301,L]
 <FilesMatch "\.(?i:pdf)$">
   Require all denied
 </FilesMatch>
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
